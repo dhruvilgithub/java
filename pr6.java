@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class pr6 {
+    public static void main (String arg[])
+    {
+        System.out.print("Enter the number :");
+        Scanner scn = new Scanner(System.in);
+        int num = scn.nextInt();
+        int temp=0,num1=0;
+
+        while(num!=0)
+        {
+                temp=num%10;
+                num1=temp+(num1*10);
+                num/=10;
+        }
+        System.out.println("revers number is "+num1);
+        
+    }
+    
+}
